@@ -1,0 +1,13 @@
+import React from "react";
+import { motion } from "framer-motion";
+
+function Tech({ img, title }) {
+  return (
+    <div className="flex justify-center items-center flex-col mx-2 lg:4">
+      <img src={img} alt={title} />
+      <p>{title}</p>
+    </div>
+  );
+}
+
+export default Tech;
