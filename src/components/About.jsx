@@ -83,8 +83,11 @@ function About() {
           design a site and having Fun🎉 while making them..And successfully
           helped more than <b className="text-[#2c65ce]">150+</b> developers
         </p>
-        <h2>Technologies known</h2>
-        <div className="flex">
+        <h2 className="text-xl md:text-2xl lg:text-3xl">
+          <span className="underline decoration-[#2c65ce] ">Technologies</span>{" "}
+          known
+        </h2>
+        <div className=" grid grid-cols-2 md:flex ">
           <div className="flex justify-center items-center flex-col mx-2 lg:4">
             <img src={htmlImg} alt="html" />
             <p>html</p>
@@ -118,6 +121,11 @@ function About() {
           <div className="flex justify-center items-center flex-col mx-2 lg:4">
             <img src={githubImg} alt="github" />
             <p>github</p>
+          </div>
+          {/**firebase */}
+          <div className="flex justify-center items-center flex-col mx-2 lg:4">
+            <img src={firebaseImg} alt="firebase" />
+            <p>Firebase</p>
           </div>
         </div>
       </div>

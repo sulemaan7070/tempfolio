@@ -37,7 +37,12 @@ function Hero() {
             />
             Link to github
           </button>
-          <button className="btn2 px-6 rounded-md flex justify-center items-center lg:pl-8">
+          <a
+            href="../../ContentCreatorResume.pdf"
+            target="_blank"
+            download="resume"
+            className="btn2 cursor-pointer px-6 rounded-md flex justify-center items-center lg:pl-8"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -53,7 +58,7 @@ function Hero() {
               />
             </svg>
             Download resume
-          </button>
+          </a>
         </div>
       </div>
     </main>

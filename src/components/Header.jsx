@@ -49,7 +49,8 @@ function Header() {
           bgColor="transparent"
         />
       </motion.div>
-      <motion.div
+      <motion.a
+        href="#contact"
         className="flex flex-row items-center text-black-300 cursor-pointer"
         initial={{
           x: 500,
@@ -74,7 +75,7 @@ function Header() {
         <p className="uppercase hidden md:inline-flex text-sm text-black-400">
           get in touch
         </p>
-      </motion.div>
+      </motion.a>
     </header>
   );
 }

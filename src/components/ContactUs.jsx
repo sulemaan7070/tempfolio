@@ -29,7 +29,8 @@ export const ContactUs = () => {
   return (
     <>
       <div
-        className="h-[50vh] relative flex-col flex  text-left md:flex-row 
+        id="contact"
+        className="md:h-[65vh] relative flex-col flex  text-left md:flex-row 
   max-w-7xl px-10 justify-evenly items-center"
       >
         <h3 className="absolute top-20 uppercase tracking-[20px] text-gray-500 text-2xl">
@@ -50,7 +51,7 @@ export const ContactUs = () => {
         <h1 className="text-center">map</h1>
         <MapContainer
           center={[14.754419824099354, 78.55434815620328]}
-          zoom={13}
+          zoom={8}
           scrollWheelZoom={false}
         >
           <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />

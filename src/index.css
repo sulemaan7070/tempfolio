@@ -33,7 +33,7 @@
   position: absolute;
 } */
 .leaflet-container {
-  @apply w-full lg:w-[90%] lg:mx-20 h-[70vh] absolute;
+  @apply w-full lg:w-[100%]  h-[70vh] absolute touch-none touch-pinch-zoom;
 }
 
 input {

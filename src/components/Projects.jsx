@@ -7,7 +7,7 @@ import Attribution from "./Attribution";
 function Projects() {
   return (
     <div
-      className="relative flex overflow-hidden flex-col text-left md:flex-row 
+      className="relative min-h-screen flex overflow-hidden flex-col text-left md:flex-row 
     max-w-full justify-evenly mx-auto items-center z-0 "
     >
       <h3 className="absolute top-20 uppercase tracking-[20px] text-gray-500 text-2xl">
@@ -60,6 +60,12 @@ function Projects() {
               </span>{" "}
               Todo App with local storage
             </h4>
+            {/**attribution */}
+            <Attribution
+              site="https://keeper-clone-todos.netlify.app/"
+              code="https://github.com/sulemaan7070/keeper-clone-Todo-app"
+              bool={true}
+            />
             <p className=" text-sm md:text-base lg:text-xl text-center md:text-left">
               This is a todo app with functionality of storing the items in
               local storage along with with other functionalites.
@@ -79,8 +85,14 @@ function Projects() {
               <span className="underline decoration-[#2c65ce]">
                 projects 2 0f 3:
               </span>{" "}
-              Todo App with local storage
+              Front end mentor challenges
             </h4>
+            {/**attribution */}
+            <Attribution
+              site="none"
+              code="https://github.com/sulemaan7070/frontend-mentor-challanges"
+              bool={false}
+            />
             <p className=" text-sm md:text-base lg:text-xl text-center md:text-left">
               More than 10+ completed challenges or mini projects of the Front
               end mentor site... with a lot of new learnings and hands on
