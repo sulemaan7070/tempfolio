@@ -12,7 +12,21 @@ function Hero() {
     loop: true,
     delaySpeed: 2000,
   });
-
+  // Function will execute on click of button
+  const onButtonClick = () => {
+    // using Java Script method to get PDF file
+    fetch("../../ContentCreatorResume.pdf").then((response) => {
+      response.blob().then((blob) => {
+        // Creating new object of PDF file
+        const fileURL = window.URL.createObjectURL(blob);
+        // Setting various property values
+        let alink = document.createElement("a");
+        alink.href = fileURL;
+        alink.download = "resume.pdf";
+        alink.click();
+      });
+    });
+  };
   return (
     <main className=" w-[85%] mx-auto font-Inter h-[90vh] xl:h-[90vh] flex gap-4 justify-around  items-center flex-col xl:flex-row-reverse border-b-2 border-dotted border-[#2c65ce]">
       <div className="xl:w-[50%]">
@@ -43,15 +57,16 @@ function Hero() {
             />
             Link to github
           </motion.a>
-          <motion.a
+          <motion.button
             whileHover={{
               scale: 1.1,
               transition: { duration: 0.4 },
             }}
             whileTap={{ scale: 0.9 }}
-            href="../../ContentCreatorResume.pdf"
-            target="_blank"
-            download="resume.pdf"
+            onClick={onButtonClick}
+            // href="../../ContentCreatorResume.pdf"
+            // target="_blank"
+            // download="resume.pdf"
             className="btn2 cursor-pointer text-sm lg:text-base mx-2 lg:mx-0 px-6 rounded-md flex justify-center items-center lg:pl-8"
           >
             <svg
@@ -69,7 +84,7 @@ function Hero() {
               />
             </svg>
             Download resume
-          </motion.a>
+          </motion.button>
         </div>
       </div>
     </main>
