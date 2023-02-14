@@ -10,7 +10,6 @@
   },
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
-    "formik": "^2.2.9",
     "framer-motion": "^9.0.2",
     "leaflet": "^1.9.3",
     "react": "^18.2.0",
@@ -20,8 +19,7 @@
     "react-parallax-tilt": "^1.7.101",
     "react-router-dom": "^6.8.1",
     "react-simple-typewriter": "^5.0.1",
-    "react-social-icons": "^5.15.0",
-    "yup": "^1.0.0"
+    "react-social-icons": "^5.15.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.27",

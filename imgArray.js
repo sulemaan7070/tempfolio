@@ -10,41 +10,49 @@ import githubImg from "./src/components/imgs/icons8-github.svg";
 const array = [
   {
     id: 1,
+    duration: 1,
     img: htmlImg,
     title: "HTML",
   },
   {
     id: 2,
+    duration: 1.3,
     img: cssImg,
     title: "CSS",
   },
   {
     id: 3,
+    duration: 1.6,
     img: tailwindImg,
     title: "Tailwind CSS",
   },
   {
     id: 4,
+    duration: 1.9,
     img: jsImg,
     title: "JavaScript",
   },
   {
     id: 5,
+    duration: 2.1,
     img: reactImg,
     title: "React",
   },
   {
     id: 6,
+    duration: 2.4,
     img: githubImg,
     title: "Github",
   },
   {
     id: 7,
-    title: javaImg,
+    duration: 2.7,
+    img: javaImg,
     title: "Java",
   },
   {
     id: 8,
+    duration: 3.0,
     img: firebaseImg,
     title: "Firebase",
   },

@@ -9,7 +9,8 @@ import reactImg from "./imgs/icons8-react-native.svg";
 import javaImg from "./imgs/icons8-java.svg";
 import firebaseImg from "./imgs/icons8-google-firebase-console.svg";
 import githubImg from "./imgs/icons8-github.svg";
-
+import array from "../../imgArray";
+import Tech from "./Tech";
 function About() {
   return (
     <motion.div
@@ -88,45 +89,17 @@ function About() {
           known
         </h2>
         <div className=" grid grid-cols-2 md:flex ">
-          <div className="flex justify-center items-center flex-col mx-2 lg:4">
-            <img src={htmlImg} alt="html" />
-            <p>html</p>
-          </div>
-          {/**css */}
-          <div className="flex justify-center items-center flex-col mx-2 lg:4">
-            <img src={cssImg} alt="css" />
-            <p>CSS</p>
-          </div>
-          {/**tailwind */}
-          <div className="flex justify-center items-center flex-col mx-2 lg:4">
-            <img src={tailwindImg} alt="tailwind" />
-            <p>Tailwind CSS</p>
-          </div>
-          {/**js */}
-          <div className="flex justify-center items-center flex-col mx-2 lg:4">
-            <img src={jsImg} alt="js" />
-            <p>java script</p>
-          </div>
-          {/**react */}
-          <div className="flex justify-center items-center flex-col mx-2 lg:4">
-            <img src={reactImg} alt="react" />
-            <p>React</p>
-          </div>
-          {/**java  */}
-          <div className="flex justify-center items-center flex-col mx-2 lg:4">
-            <img src={javaImg} alt="java" />
-            <p>Java</p>
-          </div>
-          {/**github */}
-          <div className="flex justify-center items-center flex-col mx-2 lg:4">
-            <img src={githubImg} alt="github" />
-            <p>github</p>
-          </div>
-          {/**firebase */}
-          <div className="flex justify-center items-center flex-col mx-2 lg:4">
-            <img src={firebaseImg} alt="firebase" />
-            <p>Firebase</p>
-          </div>
+          {array.map((arr, i) => {
+            return (
+              <Tech
+                key={arr.id}
+                i={i}
+                duration={arr.duration}
+                img={arr.img}
+                title={arr.title}
+              />
+            );
+          })}
         </div>
       </div>
     </motion.div>

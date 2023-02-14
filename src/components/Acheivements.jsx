@@ -6,8 +6,8 @@ import Tilt from "react-parallax-tilt";
 function Acheivements() {
   useEffect(() => {}, []);
   return (
-    <div className="border-b-2 border-dotted border-[#2c65ce]">
-      <h3 className="text-center my-3 lg:my-7 uppercase tracking-[10px] lg:tracking-[20px] text-gray-500 text-xl lg:text-2xl">
+    <div id="style" className="border-b-2 border-dotted border-[#2c65ce]">
+      <h3 className="text-center my-3 lg:my-7 uppercase tracking-[10px] lg:tracking-[20px] text-black py-4 text-xl lg:text-2xl">
         Acheivements
       </h3>
       <Tilt>
@@ -44,25 +44,44 @@ function Acheivements() {
         </section>
       </Tilt>
       {/**bottom 2 sections */}
-      <div>
+      <div className="lg:flex ">
         <Tilt>
-          <div className=" card flex flex-col lg:flex-row justify-center  items-center ">
-            <h4 className="  text-2xl lg:text-3xl">
+          <div className="relative card flex lg:h-[250px] flex-col w-[80%] mx-auto my-4 lg:flex-row justify-center  items-center ">
+            <h4 className=" text-[#2c65ce] text-2xl lg:text-3xl">
               won mentor of the week bagde
             </h4>
-            <img className="w-[24%] lg:w-[14%] " src={badge} alt="badge" />
+            <img
+              className="w-[24%] lg:w-[25%] pb-4 lg:pb-0"
+              src={badge}
+              alt="badge"
+            />
+
+            <a
+              className="absolute -bottom-0 lg:bottom-5 text-[#2c65ce] text-xl lg:text-2xl "
+              href="https://www.frontendmentor.io/profile/sulemaan7070"
+              target="_blank"
+            >
+              click here to see
+            </a>
           </div>
         </Tilt>
         <Tilt>
-          <div className=" card flex flex-col lg:flex-row justify-center items-center ">
+          <div className=" relative card flex flex-col lg:h-[250px] w-[80%] mx-auto my-4 lg:flex-row justify-center items-center ">
             <h4 className=" text-[#2c65ce] text-2xl lg:text-3xl">
               have 5 starts on hackerrank
             </h4>
             <img
-              className="w-[24%] lg:w-[14%] "
+              className="w-[24%] lg:w-[24%] pb-4 lg:pb-0  "
               src={hackerRankImg}
               alt="badge"
             />
+            <a
+              className="absolute -bottom-0 lg:bottom-5 text-[#2c65ce] text-xl lg:text-2xl "
+              href="https://www.hackerrank.com/sulemaan7070"
+              target="_blank"
+            >
+              click here to see
+            </a>
           </div>
         </Tilt>
       </div>

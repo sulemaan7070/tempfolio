@@ -2,7 +2,8 @@ import React from "react";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 import { SocialIcon } from "react-social-icons";
 import hero from "./imgs/hero.svg";
-
+import { motion } from "framer-motion";
+import Svg from "./Svg";
 function Hero() {
   const [text, count] = useTypewriter({
     words: [
@@ -13,9 +14,7 @@ function Hero() {
     loop: true,
     delaySpeed: 2000,
   });
-  function url() {
-    window.location.href = "https://www.github.com/sulemaan7070";
-  }
+
   return (
     <main className=" w-[85%] mx-auto font-Inter h-[90vh] xl:h-[90vh] flex gap-4 justify-around  items-center flex-col xl:flex-row-reverse border-b-2 border-dotted border-[#2c65ce]">
       <div className="xl:w-[50%]">
@@ -29,15 +28,29 @@ function Hero() {
           <Cursor cursorColor="#111" />
         </h1>
         <div className="button__div flex mt-4 lg:mt-6 justify-between xl:mx-5">
-          <button onClick={url} className="btn mr-2 ">
+          <motion.a
+            whileHover={{
+              scale: 1.1,
+              transition: { duration: 0.4 },
+            }}
+            whileTap={{ scale: 0.9 }}
+            href="https://www.github.com/sulemaan7070"
+            target="_blank"
+            className="btn mr-2 "
+          >
             <SocialIcon
               url="https://www.github.com/sulemaan7070"
               fgColor="#fff"
               bgColor="transparent"
             />
             Link to github
-          </button>
-          <a
+          </motion.a>
+          <motion.a
+            whileHover={{
+              scale: 1.1,
+              transition: { duration: 0.4 },
+            }}
+            whileTap={{ scale: 0.9 }}
             href="../../ContentCreatorResume.pdf"
             target="_blank"
             download="resume"
@@ -58,7 +71,7 @@ function Hero() {
               />
             </svg>
             Download resume
-          </a>
+          </motion.a>
         </div>
       </div>
     </main>
