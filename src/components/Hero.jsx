@@ -1,9 +1,7 @@
-import React from "react";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 import { SocialIcon } from "react-social-icons";
 import hero from "./imgs/hero.svg";
 import { motion } from "framer-motion";
-import Svg from "./Svg";
 function Hero() {
   const [text, count] = useTypewriter({
     words: [
@@ -36,7 +34,7 @@ function Hero() {
             whileTap={{ scale: 0.9 }}
             href="https://www.github.com/sulemaan7070"
             target="_blank"
-            className="btn mr-2 "
+            className="btn mr-2 px-6"
           >
             <SocialIcon
               url="https://www.github.com/sulemaan7070"
@@ -53,8 +51,8 @@ function Hero() {
             whileTap={{ scale: 0.9 }}
             href="../../ContentCreatorResume.pdf"
             target="_blank"
-            download="resume"
-            className="btn2 cursor-pointer px-6 rounded-md flex justify-center items-center lg:pl-8"
+            download="resume.pdf"
+            className="btn2 cursor-pointer text-sm lg:text-base mx-2 lg:mx-0 px-6 rounded-md flex justify-center items-center lg:pl-8"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"

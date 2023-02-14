@@ -1,7 +1,5 @@
-import React from "react";
 import { SocialIcon } from "react-social-icons";
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
 
 function Header() {
   return (

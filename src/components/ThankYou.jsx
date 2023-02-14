@@ -5,6 +5,7 @@ import locationImg from "./imgs/location.svg";
 function ThankYou() {
   return (
     <div
+      id="contact"
       className="md:h-[65vh] h-[40vh] w-[100%] lg:w-[50%] relative flex-col flex   text-left md:flex-col 
   max-w-7xl px-10 justify-center items-center mt-4 mb-14 lg:mb-0"
     >

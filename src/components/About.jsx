@@ -1,14 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 import aboutImg from "./imgs/about.jpg";
-import htmlImg from "./imgs/icons8-html-5.svg";
-import cssImg from "./imgs/icons8-css3.svg";
-import tailwindImg from "./imgs/icons8-tailwindcss.svg";
-import jsImg from "./imgs/icons8-javascript.svg";
-import reactImg from "./imgs/icons8-react-native.svg";
-import javaImg from "./imgs/icons8-java.svg";
-import firebaseImg from "./imgs/icons8-google-firebase-console.svg";
-import githubImg from "./imgs/icons8-github.svg";
 import array from "../../imgArray";
 import Tech from "./Tech";
 function About() {
@@ -54,7 +46,7 @@ function About() {
           <svg
             stroke="currentColor"
             fill="currentColor"
-            stroke-width="0"
+            strokeWidth="0"
             version="1.1"
             viewBox="0 0 34 32"
             height="1em"
@@ -69,7 +61,7 @@ function About() {
           <svg
             stroke="currentColor"
             fill="currentColor"
-            stroke-width="0"
+            strokeWidth="0"
             role="img"
             viewBox="0 0 24 24"
             height="1em"

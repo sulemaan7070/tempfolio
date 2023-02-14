@@ -1,4 +1,3 @@
-import React from "react";
 import globe from "../components/imgs/code-circle-svgrepo-com.svg";
 import codeSvg from "../components/imgs/website-click-svgrepo-com.svg";
 import { motion } from "framer-motion";

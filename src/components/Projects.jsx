@@ -1,5 +1,4 @@
 import React from "react";
-import { motion } from "framer-motion";
 import keeperImg from "../components/imgs/keeper-todo.jpg";
 import FEM from "../components/imgs/FEM.jpg";
 import Attribution from "./Attribution";
