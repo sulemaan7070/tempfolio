@@ -2,7 +2,6 @@ import { Cursor, useTypewriter } from "react-simple-typewriter";
 import { SocialIcon } from "react-social-icons";
 import hero from "./imgs/hero.svg";
 import { motion } from "framer-motion";
-import { saveAs } from "file-saver";
 function Hero() {
   const [text, count] = useTypewriter({
     words: [
@@ -13,10 +12,6 @@ function Hero() {
     loop: true,
     delaySpeed: 2000,
   });
-  function downloadResume() {
-    const fileUrl = "https://resume7070.netlify.app";
-    saveAs(fileUrl, "resume.pdf");
-  }
 
   const onButtonClick = () => {
     // using Java Script method to get PDF file
@@ -69,9 +64,6 @@ function Hero() {
             }}
             whileTap={{ scale: 0.9 }}
             onClick={onButtonClick}
-            // href="../../ContentCreatorResume.pdf"
-            // target="_blank"
-            // download="resume.pdf"
             className="btn2 cursor-pointer text-sm lg:text-base mx-2 lg:mx-0 px-6 rounded-md flex justify-center items-center lg:pl-8"
           >
             <svg
