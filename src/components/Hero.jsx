@@ -28,18 +28,18 @@ function Hero() {
     });
   };
   return (
-    <main className=" w-[85%] mx-auto font-Inter h-[90vh] xl:h-[90vh] flex gap-4 justify-around  items-center flex-col xl:flex-row-reverse border-b-2 border-dotted border-[#2c65ce]">
+    <main className="  w-full lg:w-[85%] px-3 lg:px-0  mx-auto font-Inter h-[90vh] xl:h-[90vh] flex gap-4 justify-around  items-center flex-col xl:flex-row-reverse border-b-2 border-dotted border-[#2c65ce]">
       <div className="xl:w-[50%]">
         <img className="" src={hero} alt="" />
       </div>
 
       <div className=" xl:w-[50%]">
-        <h1 className="text-3xl lg:text-5xl font-semibold scroll-px-10 h-30 xl:mx-5">
+        <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold scroll-px-10 h-30 xl:mx-5">
           Hi, Iam suleman <br />{" "}
           <span className="text-[#2c65ce] pt-2">{text}</span>
           <Cursor cursorColor="#111" />
         </h1>
-        <div className="button__div flex mt-4 lg:mt-6 justify-between xl:mx-5">
+        <div className="button__div max-w-lg flex mt-4 lg:mt-6 justify-between xl:mx-5">
           <motion.a
             whileHover={{
               scale: 1.1,
@@ -48,14 +48,14 @@ function Hero() {
             whileTap={{ scale: 0.9 }}
             href="https://www.github.com/sulemaan7070"
             target="_blank"
-            className="btn mr-2 px-6"
+            className="bg-black shadow-xl  md:px-3 lg:px-6 lg:py-1 text-sm md:text-base lg:text-lg md:pr-3 text-white rounded-lg pr-1 min-w-[10rem] mr-2"
           >
             <SocialIcon
               url="https://www.github.com/sulemaan7070"
               fgColor="#fff"
               bgColor="transparent"
             />
-            Link to github
+            <span>Link to github</span>
           </motion.a>
           <motion.button
             whileHover={{
@@ -64,7 +64,7 @@ function Hero() {
             }}
             whileTap={{ scale: 0.9 }}
             onClick={onButtonClick}
-            className="btn2 cursor-pointer text-sm lg:text-base mx-2 lg:mx-0 px-6 rounded-md flex justify-center items-center lg:pl-8"
+            className="bg-white px-1 md:px-3 lg:px-6  lg:text-lg shadow-lg text-sm md:text-base md:pr-3 text-black rounded-lg pr-1 min-w-[10rem] mr-2"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -72,7 +72,7 @@ function Hero() {
               viewBox="0 0 24 24"
               strokeWidth={1.5}
               stroke="currentColor"
-              className="w-6 h-6 pr-1"
+              className="w-6 h-6 pr-1 inline"
             >
               <path
                 strokeLinecap="round"
