@@ -67,9 +67,6 @@ export const ContactUs = () => {
 
   return (
     <>
-      <h3 className="py-8 lg:py-10 text-center uppercase tracking-[20px] text-gray-500 text-lg md:text-xl  lg:text-2xl">
-        contact
-      </h3>
       <section className="lg:flex">
         {/**contact forum */}
         {thank ? (
@@ -79,6 +76,12 @@ export const ContactUs = () => {
               className="md:h-[65vh] w-[100%] lg:w-[50%] relative flex-col flex   text-left md:flex-col 
   max-w-7xl px-10 justify-center items-center mt-4 mb-14 lg:mb-0"
             >
+              <h3 className="py-6 lg:py-8 text-center uppercase tracking-[20px] text-gray-500 text-lg md:text-xl  lg:text-2xl">
+                contact
+              </h3>
+              <span className="text-base md:text-sm lg:text-lg pb-2 text-blue-500 font-bold">
+                Drop a message let's chat✅
+              </span>
               <form className="" ref={form}>
                 <h3>Name</h3>
                 <input
