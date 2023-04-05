@@ -14,7 +14,7 @@ function Projects() {
       </h3>
       <div>
         {/**1 netflix */}
-        <div className="w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center h-auto  md:p-44 ">
+        <div className="w-screen shadow-xl flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center h-auto  md:p-44 ">
           <img
             src="https://cdn.sanity.io/images/ltuexkre/production/af7ca99b5a796d0698cf9121a4a0795b5022b6be-666x375.png"
             alt=""
@@ -43,7 +43,7 @@ function Projects() {
           </div>
         </div>
         {/**2 keeper */}
-        <div className="w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center h-auto  md:p-44 ">
+        <div className="w-screen shadow-xl flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center h-auto  md:p-44 ">
           <img
             src={keeperImg}
             alt=""
@@ -70,7 +70,7 @@ function Projects() {
           </div>
         </div>
         {/**3 Front end mentor */}
-        <div className="w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center h-auto  md:p-44 ">
+        <div className="w-screen shadow-xl flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center h-auto  md:p-44 ">
           <img
             src={FEM}
             alt=""
