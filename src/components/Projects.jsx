@@ -6,16 +6,13 @@ import Attribution from "./Attribution";
 function Projects() {
   return (
     <div
-      className="relative min-h-screen lg:h-screen 2xl:min-h-screen flex flex-col overflow-hidden  text-left 
+      className="relative  overflow-hidden  text-left 
     max-w-full justify-evenly mx-auto items-center z-0 border-b-2 border-dotted border-[#2c65ce] "
     >
-      <h3 className="py-8 uppercase tracking-[20px] text-gray-500 text-lg md:text-xl  lg:text-2xl">
+      <h3 className="py-8 uppercase tracking-[20px] text-center text-gray-500 text-lg md:text-xl  lg:text-2xl">
         projects
       </h3>
-      <div
-        className="relative w-full flex overflow-x-scroll overflow-y-hidden 
-      snap-x lg:snap-mandatory z-20 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#2c65ce]/80 scrollbar-thin"
-      >
+      <div>
         {/**1 netflix */}
         <div className="w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center h-auto  md:p-44 ">
           <img
@@ -33,7 +30,7 @@ function Projects() {
             </h4>
             {/**attribution */}
             <Attribution
-              site="https://not-netflix7070.netlify.app/"
+              site="https://netflix-clone70.netlify.app/"
               code="https://github.com/sulemaan7070/netflix-clone2"
               bool={true}
             />

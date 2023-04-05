@@ -62,7 +62,7 @@ function Acheivements() {
 
         <div className=" relative card flex flex-col lg:h-[250px] w-[80%] mx-auto my-4 lg:flex-row justify-center items-center ">
           <h4 className=" text-[#2c65ce] text-center py-4 text-2xl lg:text-3xl">
-            Have 5 starts on hackerrank
+            Have 5 stars on hackerrank
           </h4>
           <img
             className="w-[34%] md:w-[24] lg:w-[25%] md:pt-4 pb-8 lg:pb-0  "

@@ -13,7 +13,7 @@ function About() {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1.5 }}
-        className="w-full lg:w-[85%] flex flex-col relative text-center md:text-left md:flex-row mx-w-7xl px-2 md:px-10 md:py-10 justify-evenly lg:h-[75vh] mx-auto items-center
+        className="w-full lg:w-[85%] flex flex-col  text-center md:text-left md:flex-row mx-w-7xl px-2 md:px-10 md:py-10 justify-evenly lg:h-[75vh] mx-auto items-center
       border-b-2 border-dotted border-[#2c65ce] "
       >
         {" "}
