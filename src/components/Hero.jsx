@@ -15,7 +15,7 @@ function Hero() {
 
   const onButtonClick = () => {
     // using Java Script method to get PDF file
-    fetch(`finalResume.pdf`).then((response) => {
+    fetch(`finalResume1.pdf`).then((response) => {
       response.blob().then((blob) => {
         // Creating new object of PDF file
         const fileURL = window.URL.createObjectURL(blob);
