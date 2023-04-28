@@ -4,9 +4,10 @@ import tailwindImg from "./src/components/imgs/icons8-tailwindcss.svg";
 import jsImg from "./src/components/imgs/icons8-javascript.svg";
 import reactImg from "./src/components/imgs/icons8-react-native.svg";
 import javaImg from "./src/components/imgs/newjava.svg";
-import firebaseImg from "./src/components/imgs/icons8-google-firebase-console.svg";
+import mongodb from "./src/components/imgs/icons8-mongodb.svg";
+import express from "./src/components/imgs/icons8-express-js .svg";
 import githubImg from "./src/components/imgs/icons8-github.svg";
-
+import node from "./src/components/imgs/icons8-node-js.svg";
 const array = [
   {
     id: 1,
@@ -53,8 +54,20 @@ const array = [
   {
     id: 8,
     duration: 3.0,
-    img: firebaseImg,
-    title: "Firebase",
+    img: node,
+    title: "Node JS",
+  },
+  {
+    id: 9,
+    duration: 3.0,
+    img: express,
+    title: "Express JS",
+  },
+  {
+    id: 10,
+    duration: 3.0,
+    img: mongodb,
+    title: "Mongo db",
   },
 ];
 

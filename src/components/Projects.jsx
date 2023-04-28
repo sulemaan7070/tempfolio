@@ -2,7 +2,7 @@ import React from "react";
 import keeperImg from "../components/imgs/keeper-todo.jpg";
 import FEM from "../components/imgs/FEM.jpg";
 import Attribution from "./Attribution";
-
+import YTclone from "../components/imgs/yt-demo-pic1.jpg";
 function Projects() {
   return (
     <div
@@ -13,7 +13,35 @@ function Projects() {
         projects
       </h3>
       <div>
-        {/**1 netflix */}
+        {/**1 Youtube */}
+        <div className="w-screen shadow-xl flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center h-auto  md:p-44 ">
+          <img
+            src={YTclone}
+            alt=""
+            className="w-[95%] md:w-[90%] mt-2 mb-3 lg:w-[65%]"
+          />
+          <div className="space-y-10 px-0 md:px-10 max-w-6xl">
+            <h4 className="text-2xl lg:text-4xl font-semibold text-center">
+              {" "}
+              <span className="underline decoration-[#2c65ce]">
+                projects 1 0f 3:
+              </span>{" "}
+              This is a Youtube clone built with React,tailwind,vite etc and
+              this site is powered by the Rapid api.
+            </h4>
+            {/**attribution */}
+            <Attribution
+              site="https://youtube70.netlify.app"
+              code="https://github.com/sulemaan7070/youtube-app-react"
+              bool={true}
+            />
+            <p className=" text-lg md:text-xl lg:text-2xl text-center md:text-left">
+              This is a todo app with functionality of storing the items in
+              local storage along with with other functionalites.
+            </p>
+          </div>
+        </div>
+        {/**2 netflix */}
         <div className="w-screen shadow-xl flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center h-auto  md:p-44 ">
           <img
             src="https://cdn.sanity.io/images/ltuexkre/production/af7ca99b5a796d0698cf9121a4a0795b5022b6be-666x375.png"
@@ -24,7 +52,7 @@ function Projects() {
             <h4 className="text-2xl lg:text-4xl font-semibold text-center">
               {" "}
               <span className="underline decoration-[#2c65ce]">
-                projects 1 0f 3:
+                projects 2 0f 3:
               </span>{" "}
               Netflix UI clone
             </h4>
@@ -42,33 +70,7 @@ function Projects() {
             </p>
           </div>
         </div>
-        {/**2 keeper */}
-        <div className="w-screen shadow-xl flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center h-auto  md:p-44 ">
-          <img
-            src={keeperImg}
-            alt=""
-            className="w-[95%] md:w-[90%] mt-12 lg:w-[55%]"
-          />
-          <div className="space-y-10 px-0 md:px-10 max-w-6xl">
-            <h4 className="text-2xl lg:text-4xl font-semibold text-center">
-              {" "}
-              <span className="underline decoration-[#2c65ce]">
-                projects 2 0f 3:
-              </span>{" "}
-              Todo App with local storage
-            </h4>
-            {/**attribution */}
-            <Attribution
-              site="https://keeper-clone-todos.netlify.app/"
-              code="https://github.com/sulemaan7070/keeper-clone-Todo-app"
-              bool={true}
-            />
-            <p className=" text-lg md:text-xl lg:text-2xl text-center md:text-left">
-              This is a todo app with functionality of storing the items in
-              local storage along with with other functionalites.
-            </p>
-          </div>
-        </div>
+
         {/**3 Front end mentor */}
         <div className="w-screen shadow-xl flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center h-auto  md:p-44 ">
           <img

@@ -70,7 +70,7 @@ function About() {
             </span>{" "}
             known
           </h2>
-          <div className=" grid grid-cols-3 md:flex mb-10 ">
+          <div className=" grid grid-cols-3 md:flex mb-20 ">
             {array.map((arr, i) => {
               return (
                 <Tech

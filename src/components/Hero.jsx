@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 function Hero() {
   const [text, count] = useTypewriter({
     words: [
-      "Full time <Developer/>",
+      "Full stack<Developer/>",
       "Front end Enthusiast",
       "part time mentor.",
     ],
